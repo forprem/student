@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UnivApp</title>
+    <title>Tech University</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,9 +9,50 @@
   </head>
 
   <body>
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'About', about_path %>
-    <%= link_to 'New Course', courses_new_path %>
-    <%= yield %>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Tech University</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Enrollment</a></li>
+              <li><a href="</div>">Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+ 
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Tech University</h5>
+                <p class="grey-text text-lighten-4">Development of Course.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Information</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Tech University
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
   </body>
 </html>

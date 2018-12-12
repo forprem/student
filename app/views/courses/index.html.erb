@@ -5,11 +5,12 @@
     </div>
 
       <div class="row">
+        <% @courses.each do |course| %>
         <div class="col s6 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">CS111: Introl To Comp Sci</span>
-              <p>Description.</p>
+              <span class="card-title"><%= course.short_name %>: <%= course.name %> </span>
+              <p><%= course.description %></p>
             </div>
             <div class="card-action">
               <a href="#">Enroll</a>
@@ -17,18 +18,7 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">CS112: Introl To Comp Sci Ans</span>
-              <p>Description.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">Enroll</a>
-              <a href="#">Info</a>
-            </div>
-          </div>
-        </div>        
+        <% end %>
       </div>
       
 
